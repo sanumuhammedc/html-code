@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1 id="value">0</h1>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        const add = ()=>{
+            let value = document.getElementById('value').innerText;
+            let newValue = parseInt(value) + 1;
+            document.getElementById('value').innerText = newValue;
+        }
+
+        const sub = ()=>{
+            let value = document.getElementById('value').innerText;
+            let newValue = parseInt(value) - 1;
+            document.getElementById('value').innerText = newValue;
+        }
+
+        const reset = ()=>{
+            let value = document.getElementById('value').innerText;
+            let newValue = "0";
+            document.getElementById('value').innerText = newValue;
+        }
+
+    </script>
+</body>
+</html>
